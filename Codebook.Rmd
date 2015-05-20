@@ -9,9 +9,9 @@ This file provides information on source and applied transformations of the data
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ## Transformations
-1. Reading source data which from training, test and subject files. In this step the script also imports features and activity labels which are required in later steps of transformation
+1. Reading source data from training, test and subject files. In this step the script also imports feature names and activity labels which are required in later steps of transformation
 
-2. Merging of test and train data is done by rbinding data sets with same column length
+2. Merging of test and train data starts by rbinding data sets with same column length
 
 3. Cleaning the feature names is done by replacing lower-case labels and removing -() suffixes
 
@@ -23,4 +23,4 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 7. Data from different sources is merged into final data set. Outputfile: complete_data.txt
 
-8. To create summary data with verage of each variable for each activity and each subject an aggregation is performed. Outputfile: summary_data.txt
+8. To create summary data with average of each variable for each activity and each subject an aggregation is performed. Outputfile: summary_data.txt
