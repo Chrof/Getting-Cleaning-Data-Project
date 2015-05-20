@@ -1,0 +1,26 @@
+---
+title: "Codebook"
+output: html_document
+---
+
+This file provides information on source and applied transformations of the data
+
+##Source of data
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+## Transformations
+1. Reading source data which from training, test and subject files. In this step the script also imports features and activity labels which are required in later steps of transformation
+
+2. Merging of test and train data is done by rbinding data sets with same column length
+
+3. Cleaning the feature names is done by replacing lower-case labels and removing -() suffixes
+
+4. The mean and standard deviation for each measurement are extracted
+
+5. For improved readability activity codes are replaced with activity labels
+
+6. Numbered variable names names for columns are replaced with actual variable names
+
+7. Data from different sources is merged into final data set. Outputfile: complete_data.txt
+
+8. To create summary data with verage of each variable for each activity and each subject an aggregation is performed. Outputfile: summary_data.txt
